@@ -99,7 +99,7 @@ func corsMiddleware() gin.HandlerFunc {
 	return func(c *gin.Context) {
 		c.Writer.Header().Set(
 			"Access-Control-Allow-Origin",
-			"http://localhost:5173",
+			"https://mawarid-v1.vercel.app",
 		)
 
 		c.Writer.Header().Set(
